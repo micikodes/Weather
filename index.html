@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+<div class="top">
+    <div>
+        <h1>My Weather App</h1>
+    </div>
+    <div class = "city">
+        <label>
+            Enter Your Area:
+            <input type="textarea" id="cityText" placeholder=> 
+        </label>
+        <button id="submitCity"><p id="cityButton">Hit it!</p></button>
+    </div>
+</div>
+    <h2 id="displayText"></h2>
+    <div class="display">
+        <div id="today">
+            <p id="todayDate"></p>
+            <p id="todayConds"></p>
+            <p id="todayDesc"></p>
+            <p id="todayIsP">Today's weather info will be shown here.</p>
+            <p id="todayHighestTempP"></p>
+            <p id="todayLowestTempP"></p>
+            <div class="moreInfo">
+                <p id="todaySunrise"></p>
+                <p id="todaySunset"></p>
+                <p id="todayWindSpeed"></p>
+                <p id="todayCloudcover"></p>
+                <p id="todayPrecipProb"></p>
+                <canvas id="tempChartToday" style="width:100%; height: 100%"></canvas>
+            </div>
+            <button class="seeMore hidden">See More ⬇️</button>
+        </div>
+        <div id="tomorrow">
+           <p id="tomorrowDate"></p>
+           <p id="tomorrowConds"></p>
+           <p id="tomorrowDesc"></p>
+           <p id="tomorrowWillBeP">Tomorrow's weather info will be shown here.</p>
+           <p id="tomorrowHighestTempP"></p>
+           <p id="tomorrowLowestTempP"></p>
+           <div class="moreInfo">
+                <p id="tomorrowSunrise"></p>
+                <p id ="tomorrowSunset"></p>
+                <p id ="tomorrowWindSpeed"></p>
+                <p id="tomorrowCloudcover"></p>
+                <p id="tomorrowPrecipProb"></p>
+                <canvas id="tempChartTomorrow" style="width:100%; height: 100%"></canvas>
+                
+           </div>
+           <button class="seeMore hidden">See More ⬇️</button>
+        </div>
+
+
+    </div>
+    <footer>
+        <p>Made by <a href="https://www.linkedin.com/in/maxim-mičúch-2a5371222/">Maxim Mičúch</a></p>
+        <p>Weather data from <a href="https://www.visualcrossing.com/weather-api">Visual Crossing Weather Data API</a></p>
+
+    </footer>
+
+    <script defer src="./script.js"></script>  
+</body>
+</html>
